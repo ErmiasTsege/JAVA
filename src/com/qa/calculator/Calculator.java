@@ -11,7 +11,7 @@ public class Calculator {
 		System.out.println(ressub);
 		int resmult=Runner.mult(2, 5);
 		System.out.println(resmult);
-		float resdiv=Runner.div(2, 2);
+		float resdiv=Runner.div(2, 10);
 		System.out.println(resdiv);
 		
 	}
