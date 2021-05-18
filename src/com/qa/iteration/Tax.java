@@ -61,6 +61,53 @@ public class Tax {
 	}
 	
 	
+	public static double  taxedSalaryCombined(){
+		if(salary < 15000.0) {
+			
+			return taxSalary();}
+		else if (salary<20000.0){
+			
+			return taxSalary();
+			
+		}
+		else if (salary<30000.0){
+			
+			return taxSalary();
+			
+		}
+		
+		else if (salary<45000.0){
+			
+			return taxSalary();
+			
+		}
+		
+		else 
+			{
+		return taxSalary();}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static double combinedTwoMethods() {
 		return taxSalary()*salary;
 		
@@ -88,7 +135,48 @@ public class Tax {
 			System.out.println(firstNum+lastNum);
 		}
 		
-	
-	
+	public static void flowChart1() {
+		       
+		       for (int A=100;A<200;A++) {
+		    	   if(A<200) {
+		    		   System.out.println(A);
+		    	   }
+		       }
+	}
+	public static void flowChart2() {
+		int A=100;
+	       do {
+	    	   
+	    	   if(A%2==0) {
+	    		   System.out.println("_");
+	    		   A++;
+	    	   }else {System.out.println("*"); A++;}
+	       }while(A<=200);   
+	   	  
+     
+}
+	public static void printNumber() {
+		
+		 for (int A=1;A<=10;A++) {
+//			for (int B=1;B<=10;B++) //print 1 up to 10 10 times each
+			 for (int B=1;B<=A;B++) //print 1 up to 10 A times each
+			 {
+	    	  System.out.println(A);
+	    		       }
+}  
+	   	  
+    
+}
 
+public static void Array1() {
+	
+	int[] arrayone=new int[10];	
+  for(int i=0;i<arrayone.length;i++) {
+	  arrayone[i]=i;
+    System.out.println(arrayone[i]);}
+	
+}
+	
+	
+	
 }
