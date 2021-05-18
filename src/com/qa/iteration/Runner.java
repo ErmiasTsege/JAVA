@@ -25,11 +25,20 @@ public class Runner {
 		
 		System.out.println(	Tax.taxSalary());
 		System.out.println(	Tax.taxedSalary());
-		System.out.println(	Tax.combinedTwoMethods());
+		//System.out.println(	Tax.combinedTwoMethods());
+		System.out.println(Tax.	taxedSalaryCombined());
+		
 		//FizzBuzz
 		Tax.fizzBuzz();
 		//Create a method that takes a number 10-99, and adds the two digits together for example 74 = 7 + 4 = 11
 		Tax.addTwoDigitNumbers(74);
-	}
+		//Recreate the following flowchart as a project.
+		Tax.flowChart1();
+		Tax.flowChart2();
+		//Create a method that can print out the numbers 1-10 10 times each.
+		Tax.printNumber();
+		  Tax.Array1();
+		}
+	
 
 }
