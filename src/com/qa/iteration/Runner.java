@@ -40,11 +40,14 @@ public class Runner {
 		Tax.printNumber();
 		 Tax.Array1();
 		 Tax.Array2();
-		 
+		 Tax.Array3();
 		// Create two Strings
 		 AboutString.concat();
 		 AboutString.countWords();
-		 
+		 AboutString.printVertically("Abebe beso bela");
+		 AboutString.finder("Abebe beso bela", "bela");
+		 AboutString.numOfWords("Abebe beso bela");
+		 AboutString.EnhancedForLoop();
 		 }
 	
 

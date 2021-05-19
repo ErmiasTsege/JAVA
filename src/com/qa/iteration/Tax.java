@@ -2,6 +2,8 @@
 package com.qa.iteration;
 
 public class Tax {
+	
+	//Taxes Create the tax class, it contains 2 methods.
 	public static double salary=50000;
 	public static double taxvalue;
 	
@@ -97,7 +99,7 @@ public class Tax {
 		return taxSalary()*salary;
 		
 	}
-	
+	//fizzBuzz
 	public static void fizzBuzz() {
 		  for (int index = 1; index <= 100; index++) {
 			    if (index % 3 == 0 && index % 5 == 0) {
@@ -111,7 +113,7 @@ public class Tax {
 			    }
 			  }
 			}
-
+	//Create a method that takes a number 10-99, and adds the two digits together for example 74 = 7 + 4 = 11
 	public static void addTwoDigitNumbers(int num) {
 		       int lastNum;
 		       int firstNum;	
@@ -119,7 +121,7 @@ public class Tax {
 			firstNum=num/10;
 			System.out.println(firstNum+lastNum);
 		}
-		
+	//Recreate the following flowchart as a project.		
 	public static void flowChart1() {
 		       
 		       for (int A=100;A<200;A++) {
@@ -128,6 +130,7 @@ public class Tax {
 		    	   }
 		       }
 	}
+	//Create a method that can print out the numbers 1-10 10 times each.
 	public static void flowChart2() {
 		int A=100;
 	       do {
@@ -140,6 +143,7 @@ public class Tax {
 	   	  
      
 }
+	//Create a method that can print out the numbers 1-10 10 times each.
 	public static void printNumber() {
 		
 		 for (int A=1;A<=10;A++) {
@@ -152,7 +156,7 @@ public class Tax {
 	   	  
     
 }
-
+	//Create a method that can print out the numbers 1-10 10 times each.
 public static void Array1() {
 	
 	int[] arrayone=new int[10];	
@@ -171,8 +175,20 @@ public static void Array2() {
     }
 }
 
+//Create an array of integers 1-20 and iterate through it, using an enhanced for loop, square, 
+//and then print each value.
 	
+public static void Array3() {
 	
+	int[] arraythree= {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};	
+for(int i:arraythree) {
+	 System.out.print(i + "\s");
+}
+	
+   
+
+    
+}
 	
 }
 
