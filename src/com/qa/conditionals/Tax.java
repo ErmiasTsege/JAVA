@@ -1,5 +1,5 @@
 
-package com.qa.iteration;
+package com.qa.conditionals;
 
 public class Tax {
 	
@@ -93,12 +93,53 @@ public class Tax {
 	}
 	
 	
-	
-	
 	public static double combinedTwoMethods() {
 		return taxSalary()*salary;
 		
 	}
+	
+	public static int getSumMult(int num1,int num2,boolean bool) {
+		if(bool==true) {
+			return num1+num2;}
+			else {return num1*num2;}
+		}
+	
+	public static int blackJack(int num1,int num2) {
+		if(num1>0 && num2>0) {
+			  if(num1 >21 && num2 >21) {
+				  return 0;
+			  }
+			  else if(num1 >21 &&num2<21) {
+				  return num2 ;
+			  }
+			  
+			  else if (num2 >21&& num1<21) 
+				{return num1;}
+			  else if(Math.abs(num1-21)<Math.abs(num2-21)) {
+				 return num1;}
+			 else {return num2;}
+			
+			}	
+		
+	 else return 0;
+		}
+	
+	public static int uniqueSum(int num1,int num2,int num3) {
+	
+		if((num1!=num2 )&&(num2!=num3)) {
+			return num1+num2+num3;}
+			else if((num1==num2)&& (num2!=num3))
+				{return num3;}
+			else if((num1!=num2)&& (num2==num3)) {
+				return num1;}
+			else if((num1!=num2)&& (num1==num3)) {
+					return num2;}
+			else if((num1==num2) && (num2==num3)) {
+					return 0;
+				}
+			else {return 0;}
+			}
+	
 	//fizzBuzz
 	public static void fizzBuzz() {
 		  for (int index = 1; index <= 100; index++) {
@@ -121,62 +162,13 @@ public class Tax {
 			firstNum=num/10;
 			System.out.println(firstNum+lastNum);
 		}
-	//Recreate the following flowchart as a project.		
-	public static void flowChart1() {
-		       
-		       for (int A=100;A<200;A++) {
-		    	   if(A<200) {
-		    		   System.out.println(A);
-		    	   }
-		       }
-	}
-	//Create a method that can print out the numbers 1-10 10 times each.
-	public static void flowChart2() {
-		int A=100;
-	       do {
-	    	   
-	    	   if(A%2==0) {
-	    		   System.out.println("_");
-	    		   A++;
-	    	   }else {System.out.println("*"); A++;}
-	       }while(A<=200);   
-	   	  
-     
-}
-	//Create a method that can print out the numbers 1-10 10 times each.
-	public static void printNumber() {
-		
-		 for (int A=1;A<=10;A++) {
-//			for (int B=1;B<=10;B++) //print 1 up to 10 10 times each
-			 for (int B=1;B<=A;B++) //print 1 up to 10 A times each
-			 {
-	    	  System.out.println(A);
-	    		       }
-}  
-	   	  
+	
+
+   
+
     
 }
-	//Create a method that can print out the numbers 1-10 10 times each.
-public static void Array1() {
 	
-	int[] arrayone=new int[10];	
-  for(int i=0;i<arrayone.length;i++) {
-	  arrayone[i]=i+1;
-    System.out.print(arrayone[i]*10+"\s");}
-	
-}
-public static void Array2() {
-	
-	int[] arraytwo= {1,2,3,4,5,6,7,8,9,10};	
-  for(int i=0;i<arraytwo.length;i++) {
-	
-    System.out.print(arraytwo[i] + "\s");
-//  System.out.print(arraytwo[i]*10 + "\s");
-    }
-}
 
-
-	
-}
 
 
