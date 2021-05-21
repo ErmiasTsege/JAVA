@@ -1,4 +1,4 @@
-package com.qa.classTask.inheritance;
+package com.qa.classTask;
 
 public class Duck extends Animal {
     public Duck(String species, String origin) {

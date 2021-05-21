@@ -1,4 +1,4 @@
-package com.qa.classTask;
+package com.qa.classTask.inheritance;
 
 public class Person {
 	public String name; //

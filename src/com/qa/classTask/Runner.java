@@ -1,6 +1,6 @@
 package com.qa.classTask;
-import com.qa.classTask.Person;
-import com.qa.classTask.Book;
+import com.qa.classTask.inheritance.Person;
+import com.qa.classTask.inheritance.Book;
 public class Runner {
 
 	public static void main(String[] args) {
