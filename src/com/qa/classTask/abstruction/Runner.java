@@ -9,7 +9,7 @@ public class Runner {
 
 		Car sedan = new Car(1, "4w", "Toyota", "fusion", "2013", "white");
 		Motorcycle jacson = new Motorcycle(2, "Black", "bmw", "turbo", "1999", 1000);
-		Bicycle mountain = new Bicycle(3, "big", "bmx", "200", "2000", "mount");
+		Bicycle mountain = new Bicycle(3,"big", "bmx", "200", "2000",100.0,"mount");
 
 		List<Vehicle> instantGarage = new ArrayList<Vehicle>();
 		Garge parkingRoom = new Garge(instantGarage);

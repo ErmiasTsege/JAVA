@@ -22,20 +22,34 @@ public class Runner {
 		        person1.Read(book1);
 		        person2.Read(book2);
 		        person3.Read(book3);
+		        System.out.println("This from tostring imp:"+person1);//we out put person1 object directly using toString method int parent class person
 		        
-	///ineritance
+	///ihneritance
+		        
+		        
 		     Employee Employee1=new Employee("Ermi",31,"M",50000);
 		        
 		     Employee Employee2=new Employee("Abe",33,"M",110000); 
-		     Employee Employee3=new Employee("Debe",30,"M",90000);  
+		     
+		     
+		     Employee Employee3=new Employee(90000.0);  
 		     Trainee Trainee1=new Trainee("Ermi",31,"M");
 		            Trainee1.addSubject("phys");
 		            Trainee1.addSubject("bio");
 		            Trainee1.addSubject("eng");
-		            
+		      
+		            Employee3.name=person3.name;
+		            Employee3.age=person3.age;
+		            Employee3.gender=person3.gender;
+		           
+		         Person person4=new Employee(33.0);
+		      
 		            System.out.println(Trainee1.getSubjectlearned());
 		            System.out.println(Employee2.calculateWeeklySalary());
+		            System.out.println("E3 :"+Employee3.toString()+ "\s has salary of \s"+ Employee3.calculateWeeklySalary());
+		            
+		            System.out.println("person4 :"+person4.name);
+		            
 			}
 
 		}
-

@@ -5,7 +5,7 @@ public class Bicycle extends Vehicle {
 	private String typeOfbicycle;
 
 	public Bicycle(int id, String type, String manufacturer, String model, String dateofmanufacturer,
-			String typeOfbicycle) {
+			double cost, String typeOfbicycle) {
 		super(id, type, manufacturer, model, dateofmanufacturer);
 		this.typeOfbicycle = typeOfbicycle;
 		// TODO Auto-generated constructor stub

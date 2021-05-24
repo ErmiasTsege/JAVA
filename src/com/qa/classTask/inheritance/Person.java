@@ -8,6 +8,11 @@ public class Person {
 	public int walkSpeed = 30; // in feet
 // Constructor is used to 
 
+	public Person() {
+		super();
+	
+	}
+
 	public Person(String name, int age, String gender) {
 		this.name = name;
 		this.age = age;
@@ -31,8 +36,23 @@ public class Person {
 	}
 
 	public void Read(Book item) {
-		System.out.println(this.name + "\sreads" + "\sthe book in title\s" + item.BookTitle + "\sby\s" + item.AuthorName
+		System.out.println(this.toString() + "\sreads" + "\sthe book in title\s" + item.BookTitle + "\sby\s" + item.AuthorName
 				+ "\swhich contains\s" + item.pages + "\spages.");
+	}
+	
+	
+
+
+	@Override
+	public String toString() {
+		String s="";
+		s+="\s name: \s"+name;
+		s+="\s age: \s"+age;
+		s+="\s gender: \s"+gender;
+		
+		return s;
 	}
 
 }
+
+
