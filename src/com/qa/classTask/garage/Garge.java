@@ -60,6 +60,20 @@ public class Garge {
 
 	}
 
+	public void RemoveVehicleByType(Vehicle Vehicleitems) {
+
+		if (Vehicleitems instanceof Car) {
+			garagedata.remove(Vehicleitems);
+		} else if (Vehicleitems instanceof Motorcycle) {
+			garagedata.remove(Vehicleitems);
+		} else if (Vehicleitems instanceof Bicycle) {
+			garagedata.remove(Vehicleitems);
+		} else {
+			garagedata.remove(Vehicleitems);
+		}
+
+	}
+
 	public List<Vehicle> getVehicles() {
 		return this.garagedata;
 	}
@@ -70,6 +84,11 @@ public class Garge {
 		} else {
 			System.out.println("Nothing in the garage to clear.");
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "Garge [ garagedata=" + garagedata + "]";
 	}
 
 }

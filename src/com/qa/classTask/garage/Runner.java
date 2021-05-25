@@ -20,22 +20,32 @@ public class Runner {
 		List<Vehicle> instanceofGrage = new ArrayList<Vehicle>();
 
 		Garge gragelists = new Garge(instanceofGrage);
-
+//add vehicles
 		gragelists.AddVheicles(grageitems);
 
 		gragelists.AddVheicles(grageitems2);
 		gragelists.AddVheicles(grageitems3);
 		gragelists.AddVheicles(grageitems4);
+//Display Garage items
+		 gragelists.Render();
+		 
+//Remove garage items by id		 
+	   //gragelists.removeVehicleById(3);		 
+		 
+	   //gragelists.Render();	
+//Remove garage items by vehicle items		 
+		gragelists.RemoveVehicleByType(grageitems4);
 
-		// gragelists.Render();
-		gragelists.removeVehicleById(3);
-		gragelists.Render();
-		// System.out.println( grageitems.toString());
+		System.out.println(gragelists.CalculateBill(grageitems));
+//Display everything in garage as  an arraylist		
+		System.out.println(gragelists);
 
-		System.out.println(gragelists.CalculateBill(grageitems2));
-
-		gragelists.emptyGrage();
-		gragelists.Render();
+//Empty everything from garage	
+		
+	   //gragelists.emptyGrage();
+		
+	   //gragelists.Render();
+		//System.out.println(gragelists);
 	}
 
 }

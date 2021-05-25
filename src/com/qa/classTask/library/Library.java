@@ -3,7 +3,6 @@ package com.qa.classTask.library;
 import java.util.List;
 
 public class Library {
-	
 
 	List<Items> librarylist;
 	List<Person> personlist;
@@ -53,9 +52,7 @@ public class Library {
 		personlist.set(i, name);
 
 	}
-	
-	
-	
+
 	@Override
 	public String toString() {
 		return "Library [librarylist=" + librarylist + ", personlist=" + personlist + "]";

@@ -56,12 +56,10 @@ public abstract class Vehicle {
 		this.cost = cost;
 	}
 
-//	public void accelarating();
-//	public void breaking();
-
 	@Override
 	public String toString() {
 		return "Vehicle [currentid=" + currentid + ", manufacturer=" + manufacturer + ", model=" + model
 				+ ", yearManufactured=" + yearManufactured + ", Vehicletype=" + Vehicletype + ", cost=" + cost + "]";
 	}
+
 }
