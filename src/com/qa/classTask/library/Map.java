@@ -8,15 +8,10 @@ public class Map extends Items {
 		// TODO Auto-generated constructor stub
 		this.mapType=mapType;
 	}
-	
 		
-	
-	
-	
 	public String getMapType() {
 		return mapType;
 	}
-
 
 
 	public void setMapType(String mapType) {

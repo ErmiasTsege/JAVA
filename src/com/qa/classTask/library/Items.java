@@ -38,9 +38,6 @@ public abstract class Items implements Readeablity {
 		this.author = author;
 	}
 
-
-
-
 	public boolean isCheckedIn() {
 		return isCheckedIn;
 	}
@@ -49,10 +46,7 @@ public abstract class Items implements Readeablity {
 	public void setCheckedIn(boolean isCheckedIn) {
 		this.isCheckedIn = isCheckedIn;
 	}
-	
-	
-	
-		 
+			 
 		 @Override
 	 
 	public String toString() {

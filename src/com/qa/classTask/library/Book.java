@@ -4,9 +4,6 @@ public class Book extends Items{
 	
 	private int pagenumber;
 
-
-
-	
    
 	public Book(String title, String author, boolean isCheckedIn,int pagenumber) {
 		super(title, author, isCheckedIn);
